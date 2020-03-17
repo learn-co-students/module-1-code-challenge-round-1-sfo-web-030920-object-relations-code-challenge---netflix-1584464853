@@ -17,12 +17,14 @@ class Review
         @@all
     end
 
-    def viewer(viewer)
-
+    def viewer(rating)
+        var = @@all.select{ |s| s.rating == rating }
+        var.viewer
     end
 
-    def movie(movie)
-
+    def movie(rating)
+        var = @@all.select{ |s| s.rating == rating }
+        var.movie
     end
 end
 
