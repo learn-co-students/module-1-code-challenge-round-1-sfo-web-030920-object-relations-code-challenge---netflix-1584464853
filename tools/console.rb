@@ -10,10 +10,13 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
-new_review = Review.new("p_1", "m_n", 4)
-
+new_movie = Movie.new("Lotr")
+new_viewer = Viewer.new("Mark")
+new_review = Review.new(new_viewer, new_movie, 4)
 
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
 binding.pry
 0
+
+

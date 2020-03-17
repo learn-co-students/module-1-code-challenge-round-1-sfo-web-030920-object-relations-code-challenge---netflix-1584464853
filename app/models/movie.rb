@@ -23,10 +23,19 @@ class Movie
   end
 
   def average_rating(title)
-    
+
   end
 
 end
+
+#################################################################
+
+# - `Movie.highest_rated`-----------------
+#   - returns the `Movie` instance with the highest average rating.
+
+#################################################################
+
+
 
 # - `Movie#average_rating`
 #   - returns the average of all ratings for the `Movie` instance

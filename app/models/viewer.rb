@@ -22,13 +22,39 @@ class Viewer
     review.movie
   end
 
-  def rate_movie(movie, rating)
+  def rate_movie(movie, rating)s
 
   end
 
-
+  def reviewed_movie?(movie)
+    Review.all.select do |s|
+        if  s.viewer == self && s.movie == movie
+          true
+        else
+          false
+        end
+    end
+  end
 
 end
+
+
+#########################################################################
+
+
+# - `Viewer#reviewed_movie?(movie)`---------------
+#   - a `Movie` instance is the only argument
+#   - returns `true` if the `Viewer` has reviewed this `Movie` 
+#   (if there is a `Review` instance that has this `Viewer` and `Movie`), 
+#   returns `false` otherwise
+
+
+#########################################################################
+
+
+
+
+
 
 # - `Viewer#rate_movie(movie, rating)`
 #   - a `Movie` instance and a rating (number) are passed in as arguments
