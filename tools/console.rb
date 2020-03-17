@@ -11,6 +11,7 @@ end
 # so they will be available to test and play around with in your console
 shelter = Movie.new("Shelter")
 watcher = Viewer.new("Ty")
+review = Review.new(shelter, watcher)
 
 
 

@@ -1,9 +1,9 @@
 class Review
 
-    attr_accessor :rating, :movie
+    attr_accessor :rating, :movie, :reviewer
     @@all = []
     def initialize(movie_object, review_obj)
-        @review = review_obj
+        @reviewer = review_obj
         @movie = movie_object
         @rating = 0
         @@all << self
@@ -11,11 +11,11 @@ class Review
 
 
     def review 
-        Viewer.all.select{|person| person.username == self}
+        Viewer.all.select{|person| person.username}
     end
 
     def movie 
-        Movie.all.select{|movie| movie.title = self}
+        Movie.all.select{|movie| movie.title}
     end
 
     def self.all

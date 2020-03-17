@@ -17,11 +17,13 @@ class Movie
   end
 
   def reviewers
-    Viewer.all.select{|reviewed| reviewed.movie == self}
+    Review.all.find{|reviewed| reviewed.movie == self}
   end
 
   def average_rating
-    rate = Review.all.select {|rating| rating.review}
+    rate = 0
+    count = Review.all.select{|rates| rate += rates.rating}
+    return (rate / count.length)
   end
   #we will cover this in part 2
   # def highest_rated

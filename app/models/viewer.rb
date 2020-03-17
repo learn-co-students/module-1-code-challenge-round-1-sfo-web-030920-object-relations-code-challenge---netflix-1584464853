@@ -13,11 +13,11 @@ class Viewer
   end
   
   def reviews
-    Review.all.select{|reviews| reviews.viewer == self}
+    Review.all.select{|reviews| reviews.reviewer}
   end
 
   def reviewed_movies
-    Review.all.select{|reviews| reviews.movie == self}
+    Review.all.select{|reviews| review.movie}
   end
 
   # This is in part 2
