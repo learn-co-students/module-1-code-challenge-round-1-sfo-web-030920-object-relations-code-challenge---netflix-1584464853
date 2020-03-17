@@ -100,7 +100,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Viewer
 
-- `Viewer#reviewed_movie?(movie)`
+- `Viewer#reviewed_movie?(movie)`---------------
   - a `Movie` instance is the only argument
   - returns `true` if the `Viewer` has reviewed this `Movie` (if there is a `Review` instance that has this `Viewer` and `Movie`), returns `false` otherwise
 - `Viewer#rate_movie(movie, rating)`
@@ -113,7 +113,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Movie#average_rating`
   - returns the average of all ratings for the `Movie` instance
   - to average ratings, add all ratings together and divide by the total number of ratings.
-- `Movie.highest_rated`
+- `Movie.highest_rated`-----------------
   - returns the `Movie` instance with the highest average rating.
 
 ## Rubric
