@@ -22,8 +22,19 @@ class Viewer
   end
 
   def rate_movie(movie_obj, rating)
-    if !reviewed_movies
+    Review.all.each do |review|
+      if !review.movie && !review.viewer
+        Review.new(self, movie_obj, rating)
+      else
+        review.rating = rating
+      end
+    end
+    Review.all
+
+    
+    Review.all.select{|review| review.movie == movie_obj}
   end
+
 end
 
 # - `Viewer#rate_movie(movie, rating)`
