@@ -23,7 +23,6 @@ review1 = Review.new(user1, movie1, 4.5)
 review3 = Review.new(user1, movie3, 3)
 review4 = Review.new(user1, movie4, 2.0)
 review2 = Review.new(user2, movie2, 4.9)
-review5 = Review.new(user2, movie1, 2.5)
 
 
 
