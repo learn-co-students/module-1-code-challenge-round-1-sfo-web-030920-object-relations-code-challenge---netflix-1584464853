@@ -20,16 +20,26 @@ class Viewer
     Review.all.select{|reviews| reviews.movie == self}
   end
 
-  def reviewed_movie?(movie_obj)
-    if reviewed_movies == movie_obj
-        return true
-    else
-        return false
+  # This is in part 2
+  # def reviewed_movie?(movie_obj)
+  #   if reviewed_movies == movie_obj
+  #       return true
+  #   else
+  #       return false
+  #   end
+
+    def rate_movie(movie, rating)
+      if reviewed_movies
+        newrating = reviewed_movies
+        puts "They in here"
+      else
+        rated = Review.new(movie, rating)
+        rated
+        puts "why not here"
+        #newrating.rating = rating
+      end
     end
 
-    def rate_movie
-      
-    end
   end
   #### Viewer
 
@@ -46,6 +56,3 @@ class Viewer
 # - returns an array of `Review` instances associated with the `Viewer` instance.
 # - `Viewer#reviewed_movies`
 # - returns an array of `Movie` instances reviewed by the `Viewer` instance.
-
-
-end
