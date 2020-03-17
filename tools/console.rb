@@ -13,12 +13,17 @@ end
 #
 movie1 = Movie.new('Avenger 1')
 movie2 = Movie.new('Titanic')
+movie3 = Movie.new('Scream')
+movie4 = Movie.new('Titanic II the revenge')
 
 user1 = Viewer.new('Eduardo')
 user2 = Viewer.new('Alexia')
 
 review1 = Review.new(user1, movie1, 4.5)
-review2 = Review.new(user2, movie2m, 4.9)
+review3 = Review.new(user1, movie3, 3)
+review4 = Review.new(user1, movie4, 2.0)
+review2 = Review.new(user2, movie2, 4.9)
+review5 = Review.new(user2, movie1, 2.5)
 
 
 
