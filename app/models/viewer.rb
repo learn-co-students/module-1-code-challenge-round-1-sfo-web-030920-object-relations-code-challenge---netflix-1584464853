@@ -22,7 +22,17 @@ class Viewer
     review.movie
   end
 
+  def rate_movie(movie, rating)
+
+  end
+
+
+
 end
 
-# - `Viewer#reviewed_movies`
-#   - returns an array of `Movie` instances reviewed by the `Viewer` instance.
+# - `Viewer#rate_movie(movie, rating)`
+#   - a `Movie` instance and a rating (number) are passed in as arguments
+#   - if the `Viewer` instance and the passed `Movie` instance are _not_ already associated,
+#    this method should create a new `Review` instance
+#   - if this `Viewer` has already reviewed this `Movie`, assigns the new rating to the 
+#   existing `Review` instance
