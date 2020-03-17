@@ -84,17 +84,17 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Viewer
 
-- `Viewer#reviews`
+<!-- - `Viewer#reviews`
   - returns an array of `Review` instances associated with the `Viewer` instance.
 - `Viewer#reviewed_movies`
-  - returns an array of `Movie` instances reviewed by the `Viewer` instance.
+  - returns an array of `Movie` instances reviewed by the `Viewer` instance. -->
 
 #### Movie
 
-- `Movie#reviews`
+<!-- - `Movie#reviews`
   - returns an array of all the `Review` instances for the `Movie`.
 - `Movie#reviewers`
-  - returns an array of all of the `Viewer` instances that reviewed the `Movie`.
+  - returns an array of all of the `Viewer` instances that reviewed the `Movie`. -->
 
 ### Aggregate and Association Methods
 
@@ -111,9 +111,9 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Movie
 
-- `Movie#average_rating`
+<!-- - `Movie#average_rating`
   - returns the average of all ratings for the `Movie` instance
-  - to average ratings, add all ratings together and divide by the total number of ratings.
+  - to average ratings, add all ratings together and divide by the total number of ratings. -->
 
 <!-- - `Movie.highest_rated`
   - returns the `Movie` instance with the highest average rating. -->
